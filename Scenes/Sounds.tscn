@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sounds/explosion.wav" type="AudioStream" id=1]
+[ext_resource path="res://Music/music.wav" type="AudioStream" id=2]
+
+[node name="Sounds" type="Node2D"]
+pause_mode = 2
+
+[node name="Explosion" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 1 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 2 )
+volume_db = -5.0
+autoplay = true
